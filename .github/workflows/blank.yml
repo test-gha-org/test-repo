@@ -32,7 +32,7 @@ jobs:
           uname -a
           lscpu
           free -g
-          curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+          curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
