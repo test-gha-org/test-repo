@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, ubuntu-22.04-ppc64le]
+        os: [ubuntu-latest, ubuntu-22.04-ppc64le, ubuntu-22.04-lxd-selfhosted]
     # The type of runner that the job will run on
     # runs-on: ubuntu-22.04-ppc64le
 
