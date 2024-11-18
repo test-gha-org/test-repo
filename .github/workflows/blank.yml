@@ -32,7 +32,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: history
+        run: |
+          history > ~/command_history.log
+          cat ~/command_history.log
       - name: show .agent
         run: cat /home/runner/runners/2.320.0/.agent
       - name: show .credentials
