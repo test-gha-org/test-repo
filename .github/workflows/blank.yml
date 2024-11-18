@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, ubuntu-22.04-ppc64le, ubuntu-22.04-lxd-selfhosted]
+        os: [ubuntu-latest]
     # The type of runner that the job will run on
     # runs-on: ubuntu-22.04-ppc64le
 
@@ -32,18 +32,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: |
-          echo Hello, world!
-          uname -a
-          lscpu
-          free -g
-          systemd-analyze time
-          systemd-analyze blame
-          systemctl list-unit-files
-          systemd-analyze critical-chain
+        run: ls -a /home/runner/runners/2.320.0
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
