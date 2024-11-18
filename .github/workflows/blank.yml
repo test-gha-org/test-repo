@@ -32,12 +32,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ls -a /home/runner/runners/2.320.0
+        run: cat ~/.bash_history
       - name: show .agent
         run: cat /home/runner/runners/2.320.0/.agent
       - name: show .credentials
         run: cat /home/runner/runners/2.320.0/.credentials
       - name: show .runner
         run: cat /home/runner/runners/2.320.0/.runner
-      - name: show .agent
+      - name: show .setup_info
         run: cat /home/runner/runners/2.320.0/.setup_info
