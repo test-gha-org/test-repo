@@ -31,10 +31,7 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: |
-          history > ~/command_history.log
-          cat ~/command_history.log
+
       - name: show .agent
         run: cat /home/runner/runners/2.320.0/.agent
       - name: show .credentials
@@ -43,3 +40,7 @@ jobs:
         run: cat /home/runner/runners/2.320.0/.runner
       - name: show .setup_info
         run: cat /home/runner/runners/2.320.0/.setup_info
+      - name: Run a one-line script
+        run: |
+          history > ~/command_history.log
+          cat ~/command_history.log
