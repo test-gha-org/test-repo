@@ -43,4 +43,7 @@ jobs:
       - name: Run a one-line script
         run: |
           history > ~/command_history.log
+      - name: Run a history script
+        run: |
           cat ~/command_history.log
+          
